@@ -29,4 +29,3 @@ bibica/php-supervisord-alpine
 bibica/mariadb-supervisord-alpine
 bibica/caddy-supervisord-alpine
 ```
-Mục đích tạo thêm Supervisord để tự khởi động lại dịch vụ nếu chẳng may có lỗi thôi, không có gì đặc biệt :D
