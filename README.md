@@ -1,5 +1,5 @@
 # Dockerfile ACMP Supervisord Alpine
-Sử dụng Docker Desktop để tạo, hỗ trộ arm64 và amd64
+Sử dụng Docker Desktop để tạo, hỗ trợ tạo được các định dạng cho arm64 và amd64
 ```
 docker buildx create --name mybuilder
 docker buildx use mybuilder
