@@ -1,9 +1,11 @@
 # Dockerfile ACMP Supervisord Alpine
-
-### Caddy v2.8.4 with Supervisord
+Sử dụng Docker Desktop để tạo
 ```
 docker buildx create --name mybuilder
 docker buildx use mybuilder
+```
+### Caddy v2.8.4 with Supervisord
+```
 docker buildx build --tag bibica/caddy-supervisord-alpine -o type=image --platform=linux/arm64,linux/amd64 .
 docker buildx build --push --tag bibica/caddy-supervisord-alpine --platform=linux/arm64,linux/amd64 .
 ````
