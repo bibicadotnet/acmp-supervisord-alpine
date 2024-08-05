@@ -1,5 +1,5 @@
 # Dockerfile ACMP Supervisord Alpine
-Sử dụng Docker Desktop để tạo
+Sử dụng Docker Desktop để tạo, hỗ trộ arm64 và amd64
 ```
 docker buildx create --name mybuilder
 docker buildx use mybuilder
@@ -19,18 +19,10 @@ docker buildx build --push --tag bibica/mariadb-supervisord-alpine --platform=li
 docker buildx build --tag bibica/php-supervisord-alpine -o type=image --platform=linux/arm64,linux/amd64 .
 docker buildx build --push --tag bibica/php-supervisord-alpine --platform=linux/arm64,linux/amd64 .
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Link images sau khi tạo xong
+```
+docker pull bibica/php-supervisord-alpine:latest
+bibica/mariadb-supervisord-alpine
+bibica/caddy-supervisord-alpine
+```
+Mục đích tạo thêm Supervisord để tự khởi động lại dịch vụ nếu chẳng may có lỗi thôi, không có gì đặc biệt :D
