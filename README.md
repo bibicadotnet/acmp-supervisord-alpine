@@ -1,5 +1,9 @@
 # Dockerfile ACMP Supervisord Alpine
+Mục đích tạo thêm Supervisord để tự khởi động lại dịch vụ nếu chẳng may có lỗi, không có gì đặc biệt :D
+
 Sử dụng Docker Desktop để tạo, hỗ trợ tạo được các định dạng cho arm64 và amd64
+
+// Ghi chú lại để nhớ các lệnh, sau tạo lại nhanh hơn thôi
 ```
 docker buildx create --name mybuilder
 docker buildx use mybuilder
