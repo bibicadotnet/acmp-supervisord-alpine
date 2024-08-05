@@ -1,4 +1,4 @@
-# Dockerfile ACMP Supervisord Alpine
+# Dockerfile ACMP Supervisord Alpine (Mariadb đang lỗi)
 Mục đích tạo thêm Supervisord để tự khởi động lại dịch vụ nếu chẳng may có lỗi, không có gì đặc biệt :D
 
 Sử dụng Docker Desktop để tạo, hỗ trợ tạo được các định dạng cho arm64 và amd64
