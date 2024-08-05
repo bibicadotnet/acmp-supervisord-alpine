@@ -21,7 +21,7 @@ docker buildx build --push --tag bibica/php-supervisord-alpine --platform=linux/
 ```
 Link images sau khi tạo xong
 ```
-docker pull bibica/php-supervisord-alpine:latest
+docker pull bibica/php-supervisord-alpine
 bibica/mariadb-supervisord-alpine
 bibica/caddy-supervisord-alpine
 ```
